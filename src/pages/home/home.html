@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Barcode App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img [src]="imageSrc"/>
+  </ion-card>
+  <div>
+    <button ion-button block (click)="startScan()">Start Scan</button>
+    <button ion-button block (click)="takePicture()">Start Camera</button>
+  </div>
+</ion-content>
